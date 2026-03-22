@@ -6,7 +6,7 @@
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 18:59:02 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/20 00:34:03 by klucchin        ###   ########.fr        #
+#  Updated: 2026/03/22 13:55:51 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -33,4 +33,5 @@ def wisdom_potion():
     water = create_water()
     air = create_air()
     earth = create_earth()
-    return f"Wisdom potion brewed with all elements: {fire}, {water}, {earth}, {air}"
+    string = "Wisdom potion brewed with all elements:"
+    return f"{string} {fire}, {water}, {earth}, {air}"

@@ -6,12 +6,12 @@
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/19 18:58:50 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/20 00:34:39 by klucchin        ###   ########.fr        #
+#  Updated: 2026/03/22 13:36:01 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
 def main():
-    
+
     print("=== Import Transmutation Mastery ===\n")
 
     import alchemy.elements
@@ -34,6 +34,7 @@ def main():
     print("strength_potion():", strength_potion())
 
     print("\nAll import transmutation methods mastered!")
+
 
 if __name__ == "__main__":
     main()
