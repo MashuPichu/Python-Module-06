@@ -1,19 +1,20 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  elements.py                                       :+:      :+:    :+:    #
+#  recipes.py                                        :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/19 16:03:55 by klucchin        #+#    #+#               #
-#  Updated: 2026/04/06 13:24:37 by klucchin        ###   ########.fr        #
+#  Created: 2026/04/06 12:03:05 by klucchin        #+#    #+#               #
+#  Updated: 2026/04/06 13:24:43 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
+from ..elements import create_air as air
+from alchemy.potions import strength_potion as strenght
+from elements import create_fire as fire
 
-def create_earth() -> str:
-    return "Earth element created"
 
-
-def create_air() -> str:
-    return "Air element created"
+def lead_to_gold() -> str:
+    return (f"Recipe transmuting Lead to Gold: brew '{air()}' "
+            f"and '{strenght()}' mixed with '{fire()}'")

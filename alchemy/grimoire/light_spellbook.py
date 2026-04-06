@@ -1,19 +1,22 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  elements.py                                       :+:      :+:    :+:    #
+#  light_spellbook.py                                :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/19 16:03:55 by klucchin        #+#    #+#               #
-#  Updated: 2026/04/06 13:24:37 by klucchin        ###   ########.fr        #
+#  Created: 2026/04/06 12:31:53 by klucchin        #+#    #+#               #
+#  Updated: 2026/04/06 13:26:03 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-
-def create_earth() -> str:
-    return "Earth element created"
+from .light_validator import validate_ingredients
 
 
-def create_air() -> str:
-    return "Air element created"
+def light_spell_allowed_ingredients() -> list[str]:
+    return ["earth", "air", "fire", "water"]
+
+
+def light_spell_record(spell_name: str, ingredients: str) -> str:
+    result = validate_ingredients(ingredients)
+    return f"Spell recorded: {spell_name} ({result})"

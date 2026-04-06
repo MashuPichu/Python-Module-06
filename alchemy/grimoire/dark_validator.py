@@ -1,21 +1,25 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  basic.py                                          :+:      :+:    :+:    #
+#  dark_validator.py                                 :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/20 00:35:40 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/22 13:39:05 by klucchin        ###   ########.fr        #
+#  Created: 2026/04/06 13:07:43 by klucchin        #+#    #+#               #
+#  Updated: 2026/04/06 13:25:21 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from alchemy.elements import create_fire, create_earth
+from .dark_spellbook import dark_spell_allowed_ingredients
 
 
-def lead_to_gold():
-    return f"Lead transmuted to gold using {create_fire()}"
+def validate_ingredients(ingredients: str) -> str:
+    allowed = dark_spell_allowed_ingredients()
 
+    ingredients_lower = ingredients.lower()
 
-def stone_to_gem():
-    return f"Stone transmuted to gem using {create_earth()}"
+    for item in allowed:
+        if item in ingredients_lower:
+            return f"{ingredients} - VALID"
+
+    return f"{ingredients} - INVALID"

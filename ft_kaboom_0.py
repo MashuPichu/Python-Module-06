@@ -1,19 +1,24 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  elements.py                                       :+:      :+:    :+:    #
+#  ft_kaboom_0.py                                    :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/19 16:03:55 by klucchin        #+#    #+#               #
-#  Updated: 2026/04/06 13:24:37 by klucchin        ###   ########.fr        #
+#  Created: 2026/04/06 13:05:20 by klucchin        #+#    #+#               #
+#  Updated: 2026/04/06 13:12:27 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-
-def create_earth() -> str:
-    return "Earth element created"
+from alchemy.grimoire import light_spell_record
 
 
-def create_air() -> str:
-    return "Air element created"
+def main() -> None:
+    print("=== Kaboom 0 ===")
+    print("Using grimoire module directly")
+    result = light_spell_record("Fantasy", "Earth, wind and fire")
+    print(f"Testing record light spell: {result}")
+
+
+if __name__ == "__main__":
+    main()

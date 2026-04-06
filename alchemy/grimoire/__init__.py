@@ -6,12 +6,10 @@
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/20 01:12:08 by klucchin        #+#    #+#               #
-#  Updated: 2026/03/22 13:54:33 by klucchin        ###   ########.fr        #
+#  Updated: 2026/04/06 13:12:03 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from .spellbook import record_spell
+from .light_spellbook import light_spell_record
 
-from .validator import validate_ingredients
-
-__All__ = [record_spell, validate_ingredients]
+__all__ = ["light_spell_record"]

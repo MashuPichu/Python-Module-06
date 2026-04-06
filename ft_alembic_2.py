@@ -1,19 +1,23 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-#  elements.py                                       :+:      :+:    :+:    #
+#  ft_alembic_2.py                                   :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
 #  By: klucchin <klucchin@student.42.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-#  Created: 2026/03/19 16:03:55 by klucchin        #+#    #+#               #
-#  Updated: 2026/04/06 13:24:37 by klucchin        ###   ########.fr        #
+#  Created: 2026/04/06 11:18:52 by klucchin        #+#    #+#               #
+#  Updated: 2026/04/06 13:23:32 by klucchin        ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-
-def create_earth() -> str:
-    return "Earth element created"
+import alchemy.elements
 
 
-def create_air() -> str:
-    return "Air element created"
+def main() -> None:
+    print("=== Alembic 2 ===")
+    print("Accessing alchemy/elements.py using 'import ...' structure")
+    print(f"Testing create_earth: {alchemy.elements.create_earth()}")
+
+
+if __name__ == "__main__":
+    main()
